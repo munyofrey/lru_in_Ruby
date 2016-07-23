@@ -14,7 +14,7 @@ class HashMap
     bucket(key).include?(key)
   end
 
-  def set(key, val = nil)
+  def set(key, val)
     resize! if @count == num_buckets
     @count += 1 unless include?(key)
     bucket(key).insert(key, val)

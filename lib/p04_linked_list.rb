@@ -18,6 +18,7 @@ end
 
 class LinkedList
   include Enumerable
+  attr_reader :sentinel_end, :sentinel_start
 
   def initialize
     @sentinel_start = Link.new
